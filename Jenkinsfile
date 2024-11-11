@@ -14,7 +14,7 @@ pipeline {
         stage('Compile') {
             agent {
                 docker { image 'node:20.17.0-alpine' }
-                args '-u root:root'
+                
             }
             steps {
                 sh 'npm install'
